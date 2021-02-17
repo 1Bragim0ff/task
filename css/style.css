@@ -1,0 +1,126 @@
+/* Other */
+
+:root {
+    --main-color: #eb1515;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button {
+    padding: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Table */
+
+.wrapper {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.table {
+    font-size: 18px;
+    text-align: center;
+}
+
+.table__thead {
+    background: var(--main-color);
+    color: #fff;
+}
+
+.wrapper > button {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+td, th {
+    padding: 12px;
+}
+
+td > input, td > input:focus {
+    width: 131.9px;
+    height: 21px;
+    border: none;
+    outline: none;
+    text-align: center;
+    line-height: 21px;
+    font-size: 18px;
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    background:rgba(156, 156, 156, 0.3);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: #fff;;
+}
+
+.form__header {
+    color: var(--main-color);
+    margin-top: 20px;
+}
+
+.form__button {
+    margin-top: 20px;
+    width: 150px;
+}
+
+.form__input {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 15px;
+    outline: none;
+    padding: 10px;
+}
+
+.form__input:focus {
+    border: 1px solid var(--main-color)
+}
+
+.modal__close > svg {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    cursor: pointer;
+    fill: var(--main-color);
+}
+
+#myChart {
+    margin-top: 40px;
+}
