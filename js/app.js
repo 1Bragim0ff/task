@@ -186,18 +186,16 @@ function parseDatabase(database) {
 }
 
 // Create Line chart
+let chart;
 
 function createChart() {
     if (chart) {
-        chart.reset();
         chart.destroy();
-        chart.clear();
-        chart.update();
     }
     let [xdata, xlabels] = parseDatabase(database);
     console.log(xdata, xlabels);
     var ctx = document.getElementById('myChart').getContext('2d');
-    var chart = new Chart(ctx, {
+    chart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: xlabels,
