@@ -83,6 +83,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Add in database from table
+
     function addDataFromTable(event, element, value, input) {
         for (let i = 0; i <= database.length - 1; i++) {
             let flag = Object.values(database[i]).indexOf(value);
@@ -99,6 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Inline table editing
+
     function tableEdit() {
         const tds = document.querySelectorAll('td');
 
@@ -132,6 +134,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Graph
+
     function parseDatabase(database) {
         let xlabels = [];
         let xdata = {};
@@ -181,7 +184,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
         
     // Create line chart
+
     function createChart() {
+        
 
         // Delete the previous chart so that there are no overlays
         if (chart) {
